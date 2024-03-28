@@ -9,6 +9,7 @@
 	"editor.cursorBlinking": "solid",
 	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.scrollbar.horizontal": "hidden",
+	"workbench.editor.tabSizing": "fixed",
 	"editor.scrollbar.vertical": "hidden",
 	"editor.inlineSuggest.enabled": true,
 	"editor.multiCursorModifier": "ctrlCmd",
@@ -100,6 +101,6 @@
 	"editor.minimap.renderCharacters": false,
 	"extensions.ignoreRecommendations": true,
 	"workbench.activityBar.location": "top",
-	"workbench.iconTheme": "material-icon-theme",
-	"material-icon-theme.activeIconPack": "react_redux"
+	"cSpell.userWords": ["Todos"],
+	"workbench.startupEditor": "none"
 }
