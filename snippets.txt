@@ -3,7 +3,7 @@
         "prefix": "tafce",
         "scope": "typescript,typescriptreact",
         "body": [
-            "import { FC } from 'react';",
+            "import { FC } from 'react'",
             "",
             "interface I${TM_FILENAME_BASE} {",
             "",
@@ -14,8 +14,8 @@
             "        <div>",
             "",
             "        </div>",
-            "    );",
-            "};",
+            "    )",
+            "}",
             ""
         ],
         "description": "Creates a typed functional component"
@@ -29,8 +29,8 @@
             "        <div>",
             "",
             "        </div>",
-            "    );",
-            "};",
+            "    )",
+            "}",
             ""
         ],
         "description": "Creates a functional component"
@@ -49,7 +49,7 @@
         "scope": "typescript,typescriptreact,javascript,javascriptreact",
         "prefix": "stls",
         "body": [
-            "import styles from './${TM_FILENAME_BASE}.module.css';"
+            "import styles from './${TM_FILENAME_BASE}.module.css'"
         ],
         "description": "Imports styles from module"
     },
@@ -57,7 +57,7 @@
         "scope": "typescript,typescriptreact,javascript,javascriptreact",
         "prefix": "log",
         "body": [
-            "console.log($1);"
+            "console.log($1)"
         ],
         "description": "Inserts a console.log() statement"
     },
@@ -67,7 +67,7 @@
         "body": [
             "const ${1:name} = (${2:params}) => {",
             "\t$0",
-            "};"
+            "}"
         ],
         "description": "Create Arrow Function"
     },
@@ -85,7 +85,7 @@
         "scope": "typescript,typescriptreact,javascript,javascriptreact",
         "prefix": "for",
         "body": [
-            "for (let ${1:i} = 0; ${1:i} < ${2:length}; ${1:i}++) {",
+            "for (let ${1:i} = 0 ${1:i} < ${2:length} ${1:i}++) {",
             "\t$0",
             "}"
         ],
@@ -93,50 +93,50 @@
     },
     "useState Hook": {
         "scope": "typescriptreact,javascriptreact",
-        "prefix": "state",
+        "prefix": "us",
         "body": [
-            "const [${1:state}, set${1/(^\\w+).*/$1/}] = useState(${2:initialValue});",
+            "const [${1:state}, set${1/(^\\w+).*/$1/}] = useState(${2:initialValue})",
             ""
         ],
         "description": "Creates a useState hook"
     },
     "useEffect Hook": {
         "scope": "typescriptreact,javascriptreact",
-        "prefix": "effect",
+        "prefix": "ue",
         "body": [
             "useEffect(() => {",
             "\t$0",
-            "}, []);"
+            "}, [])"
         ],
         "description": "Creates a useEffect hook"
     },
     "useReducer Hook": {
         "scope": "typescriptreact,javascriptreact",
-        "prefix": "reducer",
+        "prefix": "ur",
         "body": [
-            "const [${1:state}, dispatch] = useReducer(${2:reducer}, ${3:initialState});",
+            "const [${1:state}, dispatch] = useReducer(${2:reducer}, ${3:initialState})",
             ""
         ],
         "description": "Creates a useReducer hook"
     },
     "setTimeout Function": {
         "scope": "typescript,typescriptreact,javascript,javascriptreact",
-        "prefix": "stt",
+        "prefix": "st",
         "body": [
             "setTimeout(() => {",
             "\t$0",
-            "}, ${1:delay});",
+            "}, ${1:delay})",
             ""
         ],
         "description": "Creates a setTimeout function"
     },
     "setInterval Function": {
         "scope": "typescript,typescriptreact,javascript,javascriptreact",
-        "prefix": "sil",
+        "prefix": "si",
         "body": [
             "setInterval(() => {",
             "\t$0",
-            "}, ${1:interval});",
+            "}, ${1:interval})",
             ""
         ],
         "description": "Creates a setInterval function"
